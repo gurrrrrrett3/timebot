@@ -1,0 +1,18 @@
+{
+  "command": {
+    "scope": "typescript",
+    "prefix": "command",
+    "body": [
+      "import SlashCommandBuilder from \"../../../loaders/objects/customSlashCommandBuilder\";",
+      "",
+      "const Command = new SlashCommandBuilder()",
+      "  .setName(\"$1\")",
+      "  .setDescription(\"$2\")",
+      "  .setFunction(async (interaction) => {",
+      "        $3",
+      "  });",
+      "",
+      "export default Command;"
+    ]
+  }
+}
